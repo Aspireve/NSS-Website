@@ -1,0 +1,542 @@
+
+@keyframes image1 {
+    0% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-main-image.png");
+    }
+
+    5% {
+        z-index: 2;
+        transform: translate(0, 0);
+
+        background-image: url("../assets/carousel-main-image.png");
+    }
+
+    6% {
+        z-index: -1;
+        transform: translate(-115px, -95px);
+        background-image: url("");
+    }
+
+    25% {
+        z-index: -1;
+        transform: translate(-115px, -95px);
+        background-image: url("");
+    }
+
+    26% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-main-image.png");
+    }
+
+    30% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-main-image.png");
+    }
+
+    31% {
+        z-index: -1;
+        transform: translate(175px, -95px) scale(0.65);
+        background-image: url("");
+    }
+
+    50% {
+        z-index: -1;
+        transform: translate(175px, -95px) scale(0.65);
+        background-image: url("");
+    }
+
+    51% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-main-image.png");
+    }
+
+    55% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-main-image.png");
+    }
+
+    56% {
+        z-index: -1;
+        transform: translate(-85px, 75px) scale(0.85);
+        background-image: url("");
+    }
+
+    70% {
+        z-index: -1;
+        transform: translate(-85px, 75px) scale(0.85);
+        background-image: url("");
+    }
+
+    71% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-main-image.png");
+    }
+
+    75% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-main-image.png");
+    }
+
+    76% {
+        z-index: -1;
+        transform: translate(125px, 65px) scale(0.75);
+        background-image: url("");
+    }
+
+    100% {
+        z-index: -1;
+        transform: translate(125px, 65px) scale(0.75);
+        background-image: url("");
+    }
+
+}
+
+@keyframes image2 {
+    0% {
+        z-index: -1;
+        transform: translate(-115px, -95px);
+        background-image: url("");
+    }
+
+    5% {
+        z-index: -1;
+        transform: translate(-115px, -95px);
+        background-image: url("");
+    }
+
+    6% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-1.png");
+    }
+
+    10% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-1.png");
+    }
+
+    11% {
+        z-index: -1;
+        transform: translate(175px, -95px) scale(0.65);
+        background-image: url("");
+    }
+
+    30% {
+        z-index: -1;
+        transform: translate(175px, -95px) scale(0.65);
+        background-image: url("");
+    }
+
+    31% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-1.png");
+    }
+
+    35% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-1.png");
+    }
+
+    36% {
+        z-index: -1;
+        transform: translate(-85px, 75px) scale(0.85);
+        background-image: url("");
+    }
+
+    55% {
+        z-index: -1;
+        transform: translate(-85px, 75px) scale(0.85);
+        background-image: url("");
+    }
+
+    56% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-1.png");
+    }
+
+    60% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-1.png");
+    }
+
+    61% {
+        z-index: -1;
+        transform: translate(125px, 65px) scale(0.75);
+        background-image: url("");
+    }
+
+    75% {
+        z-index: -1;
+        transform: translate(125px, 65px) scale(0.75);
+        background-image: url("");
+
+    }
+
+    76% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-1.png");
+    }
+
+    80% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-1.png");
+    }
+
+    81% {
+        z-index: -1;
+        transform: translate(-115px, -95px) scale(1);
+        background-image: url("");
+    }
+
+    100% {
+        z-index: -1;
+        transform: translate(-115px, -95px) scale(1);
+        background-image: url("");
+    }
+}
+
+@keyframes image3 {
+
+    0% {
+        z-index: -1;
+        transform: translate(175px, -95px) scale(0.65);
+        background-image: url("");
+    }
+
+    10% {
+        z-index: -1;
+        transform: translate(175px, -95px) scale(0.65);
+        background-image: url("");
+    }
+
+    11% {
+        z-index: 2;
+        transform: translate(0, 0) scale(1);
+        background-image: url("../assets/carousel-image-2.png");
+    }
+
+    15% {
+        z-index: 2;
+        transform: translate(0, 0) scale(1);
+        background-image: url("../assets/carousel-image-2.png");
+    }
+
+    16% {
+        z-index: -1;
+        transform: translate(-85px, 75px) scale(0.85);
+        background-image: url("");
+    }
+
+    35% {
+        z-index: -1;
+        transform: translate(-85px, 75px) scale(0.85);
+        background-image: url("");
+    }
+
+    36% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-2.png");
+    }
+
+    40% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-2.png");
+    }
+
+    41% {
+        z-index: -1;
+        transform: translate(125px, 65px) scale(0.75);
+        background-image: url("");
+    }
+
+    60% {
+        z-index: -1;
+        transform: translate(125px, 65px) scale(0.75);
+        background-image: url("");
+    }
+
+    61% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-2.png");
+    }
+
+    65% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-2.png");
+    }
+
+    66% {
+        z-index: -1;
+        transform: translate(-115px, -95px) scale(1);
+        background-image: url("");
+    }
+
+    80% {
+        z-index: -1;
+        transform: translate(-115px, -95px) scale(1);
+        background-image: url("");
+    }
+
+    81% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-2.png");
+    }
+
+    85% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-2.png");
+    }
+
+    86% {
+        z-index: -1;
+        transform: translate(175px, -95px) scale(0.65);
+        background-image: url("");
+    }
+
+    100% {
+        z-index: -1;
+        transform: translate(175px, -95px) scale(0.65);
+        background-image: url("");
+    }
+}
+
+@keyframes image4 {
+
+    0% {
+        z-index: -1;
+        transform: translate(-85px, 75px) scale(0.85);
+        background-image: url("");
+    }
+
+    15% {
+        z-index: -1;
+        transform: translate(-85px, 75px) scale(0.85);
+        background-image: url("");
+    }
+
+    16% {
+        z-index: 2;
+        transform: translate(0, 0) scale(1);
+        background-image: url("../assets/carousel-image-3.png");
+    }
+
+    20% {
+        z-index: 2;
+        transform: translate(0, 0) scale(1);
+        background-image: url("../assets/carousel-image-3.png");
+    }
+
+    21% {
+        z-index: -1;
+        transform: translate(125px, 65px) scale(0.75);
+        background-image: url("");
+    }
+
+    40% {
+        z-index: -1;
+        transform: translate(125px, 65px) scale(0.75);
+        background-image: url("");
+    }
+
+    41% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-3.png");
+    }
+
+    45% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-3.png");
+    }
+
+    46% {
+        z-index: -1;
+        transform: translate(-115px, -95px) scale(1);
+        background-image: url("");
+    }
+
+    65% {
+        z-index: -1;
+        transform: translate(-115px, -95px) scale(1);
+        background-image: url("");
+    }
+
+    66% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-3.png");
+    }
+
+    70% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-3.png");
+    }
+
+    71% {
+        z-index: -1;
+        transform: translate(175px, -95px) scale(0.65);
+        background-image: url("");
+    }
+
+    85% {
+        z-index: -1;
+        transform: translate(175px, -95px) scale(0.65);
+        background-image: url("");
+    }
+
+    86% {
+        z-index: 2;
+        transform: translate(0, 0) scale(1);
+        background-image: url("../assets/carousel-image-3.png");
+    }
+
+    90% {
+        z-index: 2;
+        transform: translate(0, 0) scale(1);
+        background-image: url("../assets/carousel-image-3.png");
+    }
+
+    91% {
+        z-index: -1;
+        transform: translate(-85px, 75px) scale(1);
+        background-image: url("");
+    }
+
+    100% {
+        z-index: -1;
+        transform: translate(-85px, 75px) scale(1);
+        background-image: url("");
+    }
+}
+
+@keyframes image5 {
+
+    0% {
+        z-index: -1;
+        transform: translate(125px, 65px) scale(0.75);
+        background-image: url("");
+    }
+
+    20% {
+        z-index: -1;
+        transform: translate(125px, 65px) scale(0.75);
+        background-image: url("");
+    }
+
+    21% {
+        z-index: 2;
+        transform: translate(0, 0) scale(1);
+        background-image: url("../assets/carousel-image-4.png");
+    }
+
+    25% {
+        z-index: 2;
+        transform: translate(0, 0) scale(1);
+        background-image: url("../assets/carousel-image-4.png");
+    }
+
+    26% {
+        z-index: -1;
+        transform: translate(-115px, -95px);
+        background-image: url("");
+    }
+
+    45% {
+        z-index: -1;
+        transform: translate(-115px, -95px);
+        background-image: url("");
+    }
+
+    46% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-4.png");
+    }
+
+    50% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-4.png");
+    }
+
+    51% {
+        z-index: -1;
+        transform: translate(175px, -95px) scale(0.65);
+        background-image: url("");
+    }
+    70% {
+        z-index: -1;
+        transform: translate(175px, -95px) scale(0.65);
+        background-image: url("");
+    }
+
+    71% {
+        z-index: 2;
+        transform: translate(0, 0) scale(1);
+        background-image: url("../assets/carousel-image-4.png");
+    }
+
+    75% {
+        z-index: 2;
+        transform: translate(0, 0) scale(1);
+        background-image: url("../assets/carousel-image-4.png");
+    }
+
+    76% {
+        z-index: -1;
+        transform: translate(-85px, 75px) scale(0.85);
+        background-image: url("");
+    }
+    90% {
+        z-index: -1;
+        transform: translate(-85px, 75px) scale(0.85);
+        background-image: url("");
+    }
+
+    91% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-4.png");
+    }
+
+    95% {
+        z-index: 2;
+        transform: translate(0, 0);
+        background-image: url("../assets/carousel-image-4.png");
+    }
+
+    96% {
+        z-index: -1;
+        transform: translate(-85px, 75px) scale(0.85);
+        background-image: url("");
+    }
+
+    100% {
+        z-index: -1;
+        transform: translate(-85px, 75px) scale(0.85);
+        background-image: url("");
+    }
+}
