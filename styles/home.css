@@ -6,35 +6,6 @@
     --time: 50s
 }
 
-
-
-
-
-.home-hero-section div {
-    position: absolute;
-    z-index: 1000;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-
-.text-overlay h3 {
-    font-size: 5rem;
-    white-space: nowrap;
-    font-family: 'Poppins', sans-serif;
-    color: rgba(255, 255, 255, 0.747);
-}
-
-.text-overlay h4 {
-    font-size: 7rem;
-    font-weight: 400;
-    white-space: nowrap;
-    font-family: 'Alex Brush', cursive;
-    color: rgba(255, 255, 255, 0.747);
-}
-
 .home-what-we-do {
     display: flex;
     flex-direction: row-reverse;

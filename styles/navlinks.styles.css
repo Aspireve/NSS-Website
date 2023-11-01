@@ -1,6 +1,7 @@
 .nav-items>li {
     position: relative;
     color: var(--navbar-white);
+    cursor: pointer;
 }
 
 .nav-items {
