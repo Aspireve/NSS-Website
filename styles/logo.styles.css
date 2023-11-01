@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Poppins:wght@300;400;600;800&family=Alex+Brush&display=swap');
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Times New Roman', serif;
+}
+
+.logo-image {
+    height: 5rem;
+    transition: transform .5s ease-in-out;
+}
+
+.logo-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.TCET, .NSS-UNIT {
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 115%;
+    overflow: hidden;
+    white-space: inherit;
+    color: rgba(255, 255, 255, 0.881);
+}
+
+.NSS-UNIT {
+    font-size: 2rem;
+}
+
+/* Hover Mechanics */
+
+.logo-image:hover {
+    transform: rotate(360deg);
+}

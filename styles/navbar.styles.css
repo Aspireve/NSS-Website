@@ -1,47 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Poppins:wght@300;400;600;800&family=Alex+Brush&display=swap');
 
-* {
+header {
     margin: 0;
     border: 0px;
-    --time: 50s
-}
-
-.logo-section {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-family: 'Times New Roman', serif;
-}
-
-.logo-image {
-    height: 5rem;
-    transition: transform .5s ease-in-out;
-}
-
-.logo-image:hover {
-    transform: rotate(360deg);
-}
-
-.logo-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    white-space: nowrap;
-}
-
-.TCET {
-    font-size: 1.5rem;
-    line-height: 115%;
-    overflow: hidden;
-    color: white
-}
-
-.NSS-UNIT {
-    font-size: 2rem;
-    line-height: 115%;
-    white-space: inherit;
-    overflow: hidden;
-    color: white
 }
 
 .nav-items>li {
