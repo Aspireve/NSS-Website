@@ -1,0 +1,47 @@
+.nav-items>li {
+    position: relative;
+    color: var(--navbar-white);
+    cursor: pointer;
+}
+
+.nav-items {
+    display: flex;
+    position: relative;
+    gap: 3rem;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+}
+
+/* Navbar Animations */
+.nav-items > li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    height: 3px;
+    width: 100%;
+    background: #2D9CDB;
+    scale: 1 1;
+    scale: 0 1;
+    transition: scale 250ms, translate 250ms;
+}
+
+.nav-items > li:hover {
+    color: var(--navbar-plain-white)
+}
+
+.nav-items > li:hover::after {
+    scale: 1 1;
+}
+
+.nav-items > li:hover + li::after {
+    translate: -100%;
+}
+
+.nav-items > li:has( + :hover)::after {
+    translate: 200%;
+}
+
+
