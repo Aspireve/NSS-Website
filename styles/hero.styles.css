@@ -1,0 +1,17 @@
+.home-hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.home-hero-section img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(30%);
+    overflow: hidden;
+    background-image: url('../assets/nss_team_hero.jpg');
+    background-attachment: fixed;
+    z-index: -1000;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

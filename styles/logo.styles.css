@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Poppins:wght@300;400;600;800&family=Alex+Brush&display=swap');
-
 .logo-section {
     display: flex;
     align-items: center;
     gap: 1rem;
+    cursor: pointer;
     font-family: 'Times New Roman', serif;
 }
 
@@ -25,7 +24,7 @@
     line-height: 115%;
     overflow: hidden;
     white-space: inherit;
-    color: rgba(255, 255, 255, 0.881);
+    color: var(--navbar-white);
 }
 
 .NSS-UNIT {
