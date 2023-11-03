@@ -10,6 +10,24 @@ header {
     overflow: hidden;
     margin: 0;
     border: 0px;
+    background-color: transparent;
+    transition-duration: 0.5s;
+    color: var(--navbar-display-color-default);
+}
+
+.navbaroverlay {
+    z-index: 9999999;
+    background-image: linear-gradient(black, transparent);;
+}
+
+.scrollup {
+    filter: drop-shadow(0 -10px 20px rgba(0, 0, 0, 0.527));
+    color: var(--navbar-display-color-scroll);
+    background-color: rgb(255, 255, 255);
+}
+
+.scrolldown {
+    transform: translate3d(0, -100%, 0);
 }
 
 /* Responsive */

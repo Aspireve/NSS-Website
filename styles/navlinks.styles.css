@@ -1,7 +1,8 @@
-.nav-items>li {
+.nav-items > li {
     position: relative;
-    color: var(--navbar-white);
+    color: inherit;
     cursor: pointer;
+    font-size: var(--navbar-logo-navlinks-size);
 }
 
 .nav-items {
@@ -10,7 +11,7 @@
     gap: 3rem;
     text-decoration: none;
     list-style-type: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--bold-font);
     white-space: nowrap;
 }
 
@@ -22,14 +23,14 @@
     bottom: -0.5rem;
     height: 3px;
     width: 100%;
-    background: #2D9CDB;
+    background: var(--soft-blue);
     scale: 1 1;
     scale: 0 1;
     transition: scale 250ms, translate 250ms;
 }
 
 .nav-items > li:hover {
-    color: var(--navbar-plain-white)
+    color: var(--navbar-links-hover-color)
 }
 
 .nav-items > li:hover::after {

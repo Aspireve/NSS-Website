@@ -15,35 +15,9 @@
     align-items: center;
 }
 
-.home-what-we-do-div {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 2rem
-}
 
-.home-what-we-do-header {
-    font-size: 4rem;
-    font-family: 'Poppins', sans-serif;
-    color: #2D9CDB;
-}
 
-.home-what-we-do-passage {
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
 
-}
-
-.home-what-we-do-button {
-    padding: 1rem 2rem;
-    max-width: 175px;
-    border-radius: 20px;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(90deg,#f857a6,#ff5858);
-    color: white;
-    font-size: 1rem;
-}
 
 /* .nss-team-logo-council img{
     height: 400px;
@@ -51,15 +25,7 @@
     padding: 0px 70px;
 } */
 
-.home-who-are-we {
-    display: flex;
-    flex-direction: row;
-    margin: 10rem 7rem;
-    gap: 4rem;
-    justify-content: center;
-    align-items: center;
 
-}
 
 .home-objectives {
     display: flex;

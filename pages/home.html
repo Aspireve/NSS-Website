@@ -4,17 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TCET-NSS</title>
-    <link rel="stylesheet" href="../styles/root.styles.css">
+    <link rel="stylesheet" href="../styles/root.styles.css" />
     <link rel="stylesheet" href="../styles/navbar.styles.css" />
-    <link rel="stylesheet" href="../styles/logo.styles.css">
-    <link rel="stylesheet" href="../styles/navlinks.styles.css">
-    <link rel="stylesheet" href="../styles/hero.styles.css">
+    <link rel="stylesheet" href="../styles/logo.styles.css" />
+    <link rel="stylesheet" href="../styles/navlinks.styles.css" />
+    <link rel="stylesheet" href="../styles/hero.styles.css" />
+    <link rel="stylesheet" href="../styles/objectives.styles.css" />
+    <link rel="stylesheet" href="../styles/who-are-we.styles.css" />
+    <link rel="stylesheet" href="../styles/what-we-do.styles.css" />
     <link rel="stylesheet" href="../styles/home.css" />
     <link rel="stylesheet" href="../styles/carousel.animation.styles.css" />
     <link rel="stylesheet" href="../styles/carousel.styles.css" />
     <link rel="stylesheet" href="../styles/footer.styles.css" />
     <link rel="stylesheet" href="../styles/image.shine.styles.css" />
     <link rel="stylesheet" href="../testimonial.carousel.css" />
+    <link rel="stylesheet" href="../styles/domains.cards.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
+    <link rel="stylesheet" href="../styles/testimonials.styles.css" />
+    <link rel="stylesheet" href="../styles/swiper.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -24,10 +31,8 @@
     />
   </head>
   <body>
-
     <!-- Navbar (2/3) -->
-    <header>
-
+    <header id="navbar-header">
       <!-- NSS Logo (Completed) -->
       <div class="logo-section">
         <img class="logo-image" src="../assets/nss_logo.png" alt="NSS Logo" />
@@ -56,12 +61,10 @@
           <li>Projects</li>
         </ul>
       </nav>
-
     </header>
 
     <!-- Hero Section (2/2) -->
-    <section class="home-hero-section">
-
+    <section class="home-hero-section" id="home-hero-section">
       <!-- Background Image (Complete) -->
       <img src="" />
 
@@ -70,13 +73,14 @@
         <h3>TCET NSS UNIT</h3>
         <h4>Not me but You</h4>
       </div>
-
     </section>
 
-    <section class="home-who-are-we">
-      <div class="home-what-we-do-div">
-        <h2 class="home-what-we-do-header">Who are we</h2>
-        <p class="home-what-we-do-passage">
+    <!-- Who are we (Section 1) (2/2) -->
+    <section class="who-are-we" id="home-who-are-we">
+      <!-- Section Text (Complete) -->
+      <div class="who-are-we-text hidden">
+        <h2 class="section-header">Who are we</h2>
+        <p class="section-passage">
           TCET NSS UNIT is an extra-curricular activity aided by the University
           of Mumbai and the Department of Youth Affairs and Sports, Government
           of India. Holding the motto NOT ME BUT YOU, it aims enhancing the
@@ -85,19 +89,25 @@
           members and has grown to a strength of 200 members, with over 1350
           students enrolled till date.
         </p>
-        <button class="home-what-we-do-button">Learn More About Us</button>
+        <button class="section-button">Learn More About Us</button>
       </div>
-      <div class="nss-team-logo-council">
-        <div class="image-wrapper">
-          <img src="../assets/nss_logo.png" />
-        </div>
+
+      <!-- Section Image Shine (Complete) -->
+      <div class="image-wrapper">
+        <img
+          class="section-image"
+          src="../assets/nss_logo.png"
+          alt="NSS logo"
+        />
       </div>
     </section>
 
-    <section class="home-what-we-do">
-      <div class="home-what-we-do-div">
-        <h2 class="home-what-we-do-header">What we do</h2>
-        <p class="home-what-we-do-passage">
+    <!-- What we do (Section 2) (2/2) -->
+    <section class="what-we-do">
+      <!-- Section Text (Complete) -->
+      <div class="what-we-do-text hidden">
+        <h2 class="section-header">What we do</h2>
+        <p class="section-passage">
           The TCET NSS Unit is dedicated to spreading joy through community
           service, emphasizing education and advancement as our primary goals.
           Our inventive initiatives across departments cater to the entire
@@ -106,8 +116,10 @@
           camps, medical check-ups, disaster management, national integration
           camps, and adventurous programs.
         </p>
-        <button class="home-what-we-do-button">Our Projects</button>
+        <button class="section-button">Our Projects</button>
       </div>
+
+      <!-- Section image Carousel (Complete) -->
       <div class="image-carousel">
         <div class="imagea"></div>
         <div class="image1"></div>
@@ -117,8 +129,214 @@
       </div>
     </section>
 
+    <!-- Objectives (Section 3) (2/2) -->
+    <section class="our-objectives hidden">
+      <h3 class="section-header">Our Objectives</h3>
+      <main class="page-content">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="content">
+            <!-- Card Title and Text (Complete) -->
+            <h2 class="title">Community Understanding</h2>
+            <p class="copy">
+              The objective ensures that the volunteers gain a profound
+              understanding of the community in which they work.
+            </p>
+
+            <!-- Card Button (Complete) -->
+            <button class="btn">View Projects</button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Assessment and Engagement</h2>
+            <p class="copy">
+              The second objective focuses on identifying the specific needs and
+              challenges faced by the community in which they work.
+            </p>
+            <button class="btn">View Projects</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Competence Development</h2>
+            <p class="copy">
+              Our third objective is to equip volunteers with the competence
+              needed for effective group-living and the ability to share
+              responsibilities.
+            </p>
+            <button class="btn">View Projects</button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Leadership and Democracy</h2>
+            <p class="copy">
+              The fourth objective is selected with an aim to cultivate
+              leadership qualities and democratic attitudes among all the
+              volunteers.
+            </p>
+            <button class="btn">View Projects</button>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- Testimonials (section 4) -->
+    <section class="testimonials">
+      <h3 class="section-header">Testimonials</h3>
+      <div class="testimonials-carousel">
+        <div class="testimonials-cards-holder">
+          <div class="testimonial-card">
+            <div class="testimonial-image">
+              <img src="../assets/nss_chairperson.png" alt="" />
+            </div>
+
+            <div class="testimonial-text">
+              <div class="testimonial-title">
+                <h3 class="testimonial-quote">Journey with NSS</h3>
+                <h4 class="testimonial-name">B. K. Mishra</h4>
+              </div>
+              <div class="testimonial-line"></div>
+              <p class="testimonial-content">
+                TCET always focuses on the holistic development of students. It
+                has been constantly achieving this goal with help of various
+                platforms. One of them is the National Service Scheme (NSS) of
+                the institute that pursuits the development specifically of
+                undergraduate college students which was established in 2005.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="testimonial-card">
+            <div class="testimonial-image">
+              <img src="../assets/nss_chairperson.png" alt="" />
+            </div>
+
+            <div class="testimonial-text">
+              <div class="testimonial-title">
+                <h3 class="testimonial-quote">Journey with NSS</h3>
+                <h4 class="testimonial-name">B. K. Mishra</h4>
+              </div>
+              <div class="testimonial-line"></div>
+              <p class="testimonial-content">
+                TCET always focuses on the holistic development of students. It
+                has been constantly achieving this goal with help of various
+                platforms. One of them is the National Service Scheme (NSS) of
+                the institute that pursuits the development specifically of
+                undergraduate college students which was established in 2005.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="testimonial-card">
+            <div class="testimonial-image">
+              <img src="../assets/nss_chairperson.png" alt="" />
+            </div>
+
+            <div class="testimonial-text">
+              <div class="testimonial-title">
+                <h3 class="testimonial-quote">Journey with NSS</h3>
+                <h4 class="testimonial-name">B. K. Mishra</h4>
+              </div>
+              <div class="testimonial-line"></div>
+              <p class="testimonial-content">
+                TCET always focuses on the holistic development of students. It
+                has been constantly achieving this goal with help of various
+                platforms. One of them is the National Service Scheme (NSS) of
+                the institute that pursuits the development specifically of
+                undergraduate college students which was established in 2005.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="testimonial-card">
+            <div class="testimonial-image">
+              <img src="../assets/nss_chairperson.png" alt="" />
+            </div>
+
+            <div class="testimonial-text">
+              <div class="testimonial-title">
+                <h3 class="testimonial-quote">Journey with NSS</h3>
+                <h4 class="testimonial-name">B. K. Mishra</h4>
+              </div>
+              <div class="testimonial-line"></div>
+              <p class="testimonial-content">
+                TCET always focuses on the holistic development of students. It
+                has been constantly achieving this goal with help of various
+                platforms. One of them is the National Service Scheme (NSS) of
+                the institute that pursuits the development specifically of
+                undergraduate college students which was established in 2005.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="testimonial-card">
+            <div class="testimonial-image">
+              <img src="../assets/nss_chairperson.png" alt="" />
+            </div>
+
+            <div class="testimonial-text">
+              <div class="testimonial-title">
+                <h3 class="testimonial-quote">Journey with NSS</h3>
+                <h4 class="testimonial-name">B. K. Mishra</h4>
+              </div>
+              <div class="testimonial-line"></div>
+              <p class="testimonial-content">
+                TCET always focuses on the holistic development of students. It
+                has been constantly achieving this goal with help of various
+                platforms. One of them is the National Service Scheme (NSS) of
+                the institute that pursuits the development specifically of
+                undergraduate college students which was established in 2005.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="testimonial-card">
+            <div class="testimonial-image">
+              <img src="../assets/nss_chairperson.png" alt="" />
+            </div>
+
+            <div class="testimonial-text">
+              <div class="testimonial-title">
+                <h3 class="testimonial-quote">Journey with NSS</h3>
+                <h4 class="testimonial-name">B. K. Mishra</h4>
+              </div>
+              <div class="testimonial-line"></div>
+              <p class="testimonial-content">
+                TCET always focuses on the holistic development of students. It
+                has been constantly achieving this goal with help of various
+                platforms. One of them is the National Service Scheme (NSS) of
+                the institute that pursuits the development specifically of
+                undergraduate college students which was established in 2005.
+              </p>
+            </div>
+          </div>
+
+          
+        </div>
+        <div class="testimonials-control-buttons">
+          <div class="btn0"></div>
+          <div class="btn1"></div>
+          <div class="btn2"></div>
+          <div class="btn3"></div>
+        </div>
+      </div>
+    </section>
+
     <section class="home-objectives">
-      <h3>Our Objectives</h3>
+      <h3>Domains</h3>
       <div class="objective-cards">
         <div class="blog-card">
           <div class="meta">
@@ -205,7 +423,6 @@
 
     <section class="social-links">
       <div class="socials-title">
-
         <h3>Follow us</h3>
         <h4>To Get Regular Updates about our Projects</h4>
       </div>
@@ -214,7 +431,6 @@
         <i class="fa-brands fa-instagram pink-color"></i>
         <i class="fa-brands fa-linkedin blue-color"></i>
         <i class="fa-brands fa-square-x-twitter black-color"></i>
-
       </div>
     </section>
 
@@ -296,4 +512,6 @@
       </div>
     </footer>
   </body>
+  <script src="../javaScript/swiper.min.js" defer></script>
+  <script src="../javaScript/home.js" defer></script>
 </html>

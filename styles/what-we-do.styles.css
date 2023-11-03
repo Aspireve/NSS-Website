@@ -1,6 +1,21 @@
-.custom-carousel {
-    background: black;
+.what-we-do {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding: var(--section-padding);
+    height: var(--section-height);
 }
+
+.what-we-do-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 45%;
+}
+
 
 .image-carousel {
     margin: 120px;

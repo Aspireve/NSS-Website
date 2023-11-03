@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Poppins:wght@300;400;600;800&family=Alex+Brush&display=swap');
 
 :root {
-    --navbar-white: rgba(255, 255, 255, 0.749);
-    --navbar-plain-white: white;
+    --navbar-display-color-default: rgba(255, 255, 255, 0.749);
+    --navbar-display-color-scroll: rgba(0, 0, 0, 0.788);
+    --navbar-links-hover-color-default: white;
+    --navbar-logo-image-size: 3rem;
+    --navbar-logo-TCET-size: 1rem;
+    --navbar-logo-NSSUNIT-size: 1.5rem;
+    --navbar-logo-navlinks-size: .9rem;
     --stylized-font: 'Alex Brush', cursive;
+    --section-padding: 5rem 7rem;
+    --section-header-size: 4rem;
+    --section-passage-size: 1rem;
+    --section-button-background: linear-gradient(90deg,#f857a6,#ff5858);
+    --section-button-font-size: 1rem;
+    --section-button-font-color: white;
+    --section-height: 70vh;
     --bold-font: 'Poppins', sans-serif;
+    --soft-blue: #2D9CDB;
 }

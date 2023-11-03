@@ -4,10 +4,11 @@
     gap: 1rem;
     cursor: pointer;
     font-family: 'Times New Roman', serif;
+    color: inherit;
 }
 
 .logo-image {
-    height: 5rem;
+    height: var(--navbar-logo-image-size);
     transition: transform .5s ease-in-out;
 }
 
@@ -16,19 +17,20 @@
     flex-direction: column;
     justify-content: center;
     white-space: nowrap;
+    color: inherit;
 }
 
 .TCET, .NSS-UNIT {
-    font-size: 1.5rem;
-    font-weight: 200;
+    font-size: var(--navbar-logo-TCET-size);
+    font-weight: 500;
     line-height: 115%;
     overflow: hidden;
     white-space: inherit;
-    color: var(--navbar-white);
+    color: inherit;
 }
 
 .NSS-UNIT {
-    font-size: 2rem;
+    font-size: var(--navbar-logo-NSSUNIT-size);
 }
 
 /* Hover Mechanics */
