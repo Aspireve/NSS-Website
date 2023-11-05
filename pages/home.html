@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../assets/nss_logo.svg" />
     <title>TCET-NSS</title>
-    <link rel="stylesheet" href="../styles/root.styles.css">
+    <link rel="stylesheet" href="../styles/root.styles.css" />
     <link rel="stylesheet" href="../styles/navbar.styles.css" />
-    <link rel="stylesheet" href="../styles/logo.styles.css">
-    <link rel="stylesheet" href="../styles/navlinks.styles.css">
-    <link rel="stylesheet" href="../styles/hero.styles.css">
+    <link rel="stylesheet" href="../styles/logo.styles.css" />
+    <link rel="stylesheet" href="../styles/navlinks.styles.css" />
+    <link rel="stylesheet" href="../styles/hero.styles.css" />
     <link rel="stylesheet" href="../styles/home.css" />
     <link rel="stylesheet" href="../styles/carousel.animation.styles.css" />
     <link rel="stylesheet" href="../styles/carousel.styles.css" />
@@ -24,9 +25,15 @@
     />
   </head>
   <body>
+    <div id="loader" class="loader">
+      <div class="main_page">
+        <img src="../assets/nss_logo.svg" alt="" />
+        <h1>TCET NSS UNIT</h1>
+      </div>
+    </div>
     <header>
       <div class="logo-section">
-        <img class="logo-image" src="../assets/nss_logo.png" alt="NSS Logo" />
+        <img class="logo-image" src="../assets/nss_logo.svg" alt="NSS Logo" />
         <div class="logo-title">
           <p class="TCET">TCET</p>
           <p class="NSS-UNIT">NSS UNIT</p>
@@ -45,6 +52,7 @@
           <li class="list-item">Home</li>
           <li>About Us</li>
           <li>Team</li>
+          <!-- <a href="teams.html" target="_blank"><li>Team</li></a> -->
           <li>Testimonials</li>
           <li>Projects</li>
         </ul>
@@ -53,7 +61,6 @@
 
     <!-- Hero Section (2/2) -->
     <section class="home-hero-section">
-
       <!-- Background Image (Complete) -->
       <img src="" />
 
@@ -62,26 +69,40 @@
         <h3>TCET NSS UNIT</h3>
         <h4>Not me but You</h4>
       </div>
-
     </section>
 
     <section class="home-who-are-we">
-      <div class="home-what-we-do-div">
-        <h2 class="home-what-we-do-header">Who are we</h2>
-        <p class="home-what-we-do-passage">
-          TCET NSS UNIT is an extra-curricular activity aided by the University
-          of Mumbai and the Department of Youth Affairs and Sports, Government
-          of India. Holding the motto NOT ME BUT YOU, it aims enhancing the
-          personality of volunteers and promote self-less service for the
-          well-being of society. TCET NSS UNIT was established in 2005 with 42
-          members and has grown to a strength of 200 members, with over 1350
-          students enrolled till date.
-        </p>
-        <button class="home-what-we-do-button">Learn More About Us</button>
+      <div class="who-are-we">
+        <div class="home-what-we-do-div">
+          <h2 class="home-what-we-do-header">Who are we</h2>
+          <p class="home-what-we-do-passage">
+            TCET NSS UNIT is an extra-curricular activity aided by the
+            University of Mumbai and the Department of Youth Affairs and Sports,
+            Government of India. Holding the motto NOT ME BUT YOU, it aims
+            enhancing the personality of volunteers and promote self-less
+            service for the well-being of society. TCET NSS UNIT was established
+            in 2005 with 42 members and has grown to a strength of 200 members,
+            with over 1350 students enrolled till date.
+          </p>
+          <button class="home-what-we-do-button">Learn More About Us</button>
+        </div>
+        <div class="nss-team-logo-council">
+          <div class="image-wrapper">
+            <img src="../assets/nss_logo.svg" />
+          </div>
+        </div>
       </div>
-      <div class="nss-team-logo-council">
-        <div class="image-wrapper">
-          <img src="../assets/nss_logo.png" />
+      <div class="volunteers-count">
+        <h1>Our Reach</h1>
+        <div class="count-of-details">
+          <div class="total-no-of-volunteers">
+            <h1>100</h1>
+            <img src="" alt="volunteers" />
+          </div>
+          <div class="trees-planted">
+            <h1>100</h1>
+            <img src="" alt="trees" />
+          </div>
         </div>
       </div>
     </section>
@@ -197,7 +218,6 @@
 
     <section class="social-links">
       <div class="socials-title">
-
         <h3>Follow us</h3>
         <h4>To Get Regular Updates about our Projects</h4>
       </div>
@@ -206,7 +226,6 @@
         <i class="fa-brands fa-instagram pink-color"></i>
         <i class="fa-brands fa-linkedin blue-color"></i>
         <i class="fa-brands fa-square-x-twitter black-color"></i>
-
       </div>
     </section>
 
@@ -287,5 +306,19 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://ajax.googleapisf.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../javaScript/home.js"></script>
   </body>
 </html>
