@@ -115,25 +115,51 @@ body::-webkit-scrollbar {
 .nss-team-logo-council .image-wrapper {
   height: 400px;
   width: 400px;
-  /* padding: 0px 70px; */
+  padding: 0 50px;
 }
 .image-wrapper > img {
-  height: 100%;
-  width: 100%;
+  height: 15rem;
+  width: 15rem;
 }
 .home-who-are-we {
   display: flex;
+  height: 100vh;
+  width: 100%;
   flex-direction: column;
+  align-items: center;
 }
 .who-are-we {
   display: flex;
   flex-direction: row;
   margin: 10rem 7rem;
-  gap: 4rem;
+  gap: 3rem;
   justify-content: center;
   align-items: center;
+  margin-top: 1em;
 }
-
+.volunteers-count {
+  width: 80%;
+  height: 17rem;
+  text-align: center;
+  margin-top: -7rem;
+}
+.volunteers-count > h1 {
+  font-size: 50px;
+}
+.count-of-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.count-of-details img {
+  height: 5rem;
+  width: 5rem;
+}
+.count-of-details p {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+}
 .home-objectives {
   display: flex;
   flex-direction: column;
