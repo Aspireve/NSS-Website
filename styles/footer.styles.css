@@ -1,15 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Poppins:wght@300;400;600;800&family=Alex+Brush&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jomolhari&family=Poppins:wght@300;400;600;800&family=Alex+Brush&display=swap");
 
 :root {
   --primary-color: #f2f2f2;
   --secondary-color: #000;
   --tertiary-color: #2e2b2bae;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+footer {
+  padding-top: 3rem;
+  height: 100vh;
+  width: 100%;
+}
+.background_container {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+.shapes .circle {
+  height: 20rem;
+  width: 20rem;
+  background-color: lemonchiffon;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  filter: blur(200px);
+}
+.shapes .random {
+  height: 20rem;
+  width: 20rem;
+  background-color: rgb(190, 240, 240);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+  z-index: -1;
+  filter: blur(200px);
+}
 .container {
   width: 80%;
   margin: 0 auto;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .map-locations {
@@ -34,9 +73,8 @@ iframe {
   width: 53%;
   display: flex;
   flex-direction: column;
-  gap: 1rem
+  gap: 1rem;
 }
-
 
 .contact-info h2 {
   font-weight: 600;
@@ -61,7 +99,6 @@ iframe {
   font-size: 1rem;
 }
 
-
 .legal-links ul {
   display: flex;
   gap: 1rem;
@@ -77,7 +114,7 @@ iframe {
   justify-content: space-between;
 }
 
-.website-links div { 
+.website-links div {
   width: 22%;
 }
 
@@ -98,29 +135,6 @@ hr {
   height: 1px;
   background-color: #000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 
 

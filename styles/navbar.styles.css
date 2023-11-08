@@ -1,107 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Poppins:wght@300;400;600;800&family=Alex+Brush&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jomolhari&family=Poppins:wght@300;400;600;800&family=Alex+Brush&display=swap");
 
 * {
-    margin: 0;
-    border: 0px;
-    --time: 50s
+  margin: 0;
+  border: 0px;
+  --time: 50s;
+  box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
 .logo-section {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-family: 'Times New Roman', serif;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Times New Roman", serif;
 }
 
 .logo-image {
-    height: 5rem;
-    transition: transform .5s ease-in-out;
+  height: 5rem;
+  transition: transform 0.5s ease-in-out;
 }
 
 .logo-image:hover {
-    transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .logo-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .TCET {
-    font-size: 1.5rem;
-    line-height: 115%;
-    overflow: hidden;
-    color: white
+  font-size: 1.5rem;
+  line-height: 115%;
+  overflow: hidden;
+  color: white;
 }
 
 .NSS-UNIT {
-    font-size: 2rem;
-    line-height: 115%;
-    white-space: inherit;
-    overflow: hidden;
-    color: white
+  font-size: 2rem;
+  line-height: 115%;
+  white-space: inherit;
+  overflow: hidden;
+  color: white;
 }
 
-.nav-items>li {
-    position: relative;
-    color: rgba(255, 255, 255, 0.747);
+.nav-items > li {
+  position: relative;
+  color: rgba(255, 255, 255, 0.747);
 }
 
-.nav-items>li::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -0.5rem;
-    height: 3px;
-    width: 100%;
-    background: #2D9CDB;
-    scale: 1 1;
-    scale: 0 1;
-    transition: scale 250ms, translate 250ms;
+.nav-items > li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  height: 3px;
+  width: 100%;
+  background: #2d9cdb;
+  scale: 1 1;
+  scale: 0 1;
+  transition: scale 250ms, translate 250ms;
 }
 
-.nav-items>li:hover {
-    color: white;
+.nav-items > li:hover {
+  color: white;
 }
 
-.nav-items>li:hover::after {
-    scale: 1 1;
+.nav-items > li:hover::after {
+  scale: 1 1;
 }
 
-.nav-items>li:hover+li::after {
-    translate: -100%;
+.nav-items > li:hover + li::after {
+  translate: -100%;
 }
 
-.nav-items>li:has(+ :hover)::after {
-    translate: 100%;
+.nav-items > li:has(+ :hover)::after {
+  translate: 100%;
 }
-
 
 .nav-items {
-    display: flex;
-    position: relative;
-    gap: 3rem;
-    text-decoration: none;
-    list-style-type: none;
-    font-family: 'Poppins', sans-serif;
-    white-space: nowrap;
+  display: flex;
+  position: relative;
+  gap: 3rem;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    width: 86vw;
-    padding: 20px 7vw;
-    z-index: 1000;
-    overflow: hidden;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 86vw;
+  padding: 20px 7vw;
+  z-index: 1000;
+  overflow: hidden;
 }
 
 .home-mobile-nav {
-    display: none;
+  display: none;
 }
