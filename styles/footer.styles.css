@@ -24,27 +24,30 @@ footer {
   height: 100%;
   width: 100%;
   background-color: transparent;
+  position: relative;
 }
-.shapes .circle {
+.background_container .shapes .circle {
   height: 20rem;
   width: 20rem;
-  background-color: lemonchiffon;
+  background-color: rgb(247, 243, 215);
   border-radius: 50%;
   position: absolute;
+  left: 1rem;
   z-index: -1;
-  filter: blur(200px);
+  filter: blur(150px);
 }
-.shapes .random {
+.background_container .shapes .random {
   height: 20rem;
   width: 20rem;
-  background-color: rgb(190, 240, 240);
+  background-color: rgb(209, 245, 245);
   border-radius: 50%;
   position: absolute;
-  bottom: 50px;
-  right: 10px;
+  top: 20rem;
+  left: 75rem;
   z-index: -1;
-  filter: blur(200px);
+  filter: blur(150px);
 }
+
 .container {
   width: 80%;
   margin: 0 auto;
