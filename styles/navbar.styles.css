@@ -15,18 +15,18 @@ body {
 .logo-section {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.4rem;
   font-family: "Times New Roman", serif;
 }
 
 .logo-image {
-  height: 5rem;
+  height: 4rem;
   transition: transform 0.5s ease-in-out;
 }
 
-.logo-image:hover {
+/* .logo-image:hover {
   transform: rotate(360deg);
-}
+} */
 
 .logo-title {
   display: flex;
@@ -36,15 +36,15 @@ body {
 }
 
 .TCET {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 115%;
   overflow: hidden;
   color: white;
 }
 
 .NSS-UNIT {
-  font-size: 2rem;
-  line-height: 115%;
+  font-size: 1.2rem;
+  line-height: 100%;
   white-space: inherit;
   overflow: hidden;
   color: white;
@@ -52,6 +52,8 @@ body {
 
 .nav-items > li {
   position: relative;
+}
+.nav-items > li a {
   color: rgba(255, 255, 255, 0.747);
 }
 
@@ -71,6 +73,9 @@ body {
 .nav-items > li:hover {
   color: white;
 }
+.nav-items > li a:hover {
+  color: white;
+}
 
 .nav-items > li:hover::after {
   scale: 1 1;
@@ -83,17 +88,23 @@ body {
 .nav-items > li:has(+ :hover)::after {
   translate: 100%;
 }
-
+.nav-items li a {
+  text-decoration: none;
+}
 .nav-items {
   display: flex;
   position: relative;
-  gap: 3rem;
+  gap: 4rem;
   text-decoration: none;
   list-style-type: none;
   font-family: "Poppins", sans-serif;
   white-space: nowrap;
 }
-
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -101,9 +112,13 @@ header {
   position: absolute;
   top: 0;
   width: 86vw;
-  padding: 20px 7vw;
+  padding: 0.2rem 7vw;
   z-index: 1000;
   overflow: hidden;
+  margin: auto 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: opacity(0.2);
+  border-radius: 0 0 2rem 2rem;
 }
 
 .home-mobile-nav {

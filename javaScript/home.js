@@ -18,10 +18,9 @@ counter = () => {
     );
   });
 };
-// counter();
+counter();
 
 var tl = gsap.timeline();
-
 tl.from("#loader img", {
   scale: 0,
   opacity: 0,

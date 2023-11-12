@@ -63,7 +63,7 @@ body::-webkit-scrollbar {
 
 .home-hero-section div {
   position: absolute;
-  z-index: 1000;
+  z-index: 99;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -89,8 +89,8 @@ body::-webkit-scrollbar {
 .home-what-we-do {
   display: flex;
   flex-direction: row-reverse;
-  margin: 5rem 7rem;
-  gap: 4rem;
+  margin: 4rem 7rem;
+  gap: 5rem;
   justify-content: center;
   align-items: center;
 }
@@ -101,6 +101,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
   justify-content: space-evenly;
   gap: 2rem;
+  padding-right: 2rem;
 }
 
 .home-what-we-do-header {
@@ -127,13 +128,11 @@ body::-webkit-scrollbar {
   background: linear-gradient(90deg, #f675b3, #f56969);
 }
 .nss-team-logo-council .image-wrapper {
-  height: 400px;
-  width: 400px;
-  padding: 0 50px;
+  padding: 0 5rem;
 }
 .image-wrapper > img {
-  height: 15rem;
-  width: 15rem;
+  height: 20rem;
+  width: 20rem;
 }
 .home-who-are-we {
   display: flex;
@@ -164,7 +163,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: row;
   margin: 10rem 7rem;
-  gap: 3rem;
+  gap: 6rem;
   justify-content: center;
   align-items: center;
   margin-top: 1em;
@@ -202,8 +201,8 @@ body::-webkit-scrollbar {
 .home-objectives {
   display: flex;
   flex-direction: column;
-  margin: 10rem 7rem;
-  gap: 4rem;
+  margin: 7rem;
+  gap: 5rem;
   justify-content: center;
   align-items: center;
   position: relative;
