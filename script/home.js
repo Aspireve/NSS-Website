@@ -19,7 +19,6 @@ setTimeout(() => {
 }, 500);
 
 // Navbar Animations
-
 const header = document.getElementById("navbar-header")
 
 let lastScroll = 0
@@ -73,3 +72,22 @@ const observer = new IntersectionObserver((entries) => {
     })
     
 })
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((e) => observer.observe(e))
+
+let dispvalue = document.querySelectorAll(".num");
+let Interval = 5000;
+
+dispvalue.forEach((dispvalue) => {
+  let startValue = 0;
+  let endValue = parseInt(dispvalue.getAttribute("data-val"));
+  let duration = Math.floor(Interval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    dispvalue.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
