@@ -34,6 +34,7 @@ body::-webkit-scrollbar-track {
 
 :root {
     --black: #000;
+    --time: 50s
 }
 
 .home-loader {
@@ -293,19 +294,19 @@ header {
 
 .section-button {
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(90deg,#f857a6,#ff5858);
+    background-image: linear-gradient(90deg,#f857a6,#ff5858);
     font-size: 1rem;
     color: #fff;
     padding: .75rem 2rem;
     max-width: 175px;
     border-radius: 20px;
     border: 0 solid transparent;
-    transition: 500ms;
+    transition: background-image 2ms ease-in-out;
 }
 
 .section-button:hover {
-    background: linear-gradient(90deg,rgb(231, 94, 160),#db4b4b);
-    transition: 500ms;
+    background-image: linear-gradient(90deg,rgb(231, 94, 160),#db4b4b);
+    transition: 2s;
 }
 
 .image-wrapper {
@@ -362,6 +363,124 @@ header {
     100% {
         transform: skewX(140deg) translate(140%, 0);
     }
+}
+
+/* What we do */
+
+.what-we-do {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding: 5rem 0rem;
+    height: 80vh;
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.what-we-do-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 45%;
+}
+
+
+.image-carousel {
+    margin: 120px;
+    height: 350px;
+    aspect-ratio: 16/12;
+    border-radius: 30px;
+    position: relative;
+}
+
+.imagea {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-image: url("../assets/carousel-main-image.png");
+    box-shadow: 2px 2px 15px rgb(71, 77, 79);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    background-position: center;
+    background-color: #ffddaa;
+    border-radius: 30px;
+    animation: image1 var(--time) ease-in-out 0s infinite;
+}
+
+.image1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: #e3b6ed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: translate(-115px, -95px);
+    box-shadow: 2px 2px 15px rgb(71, 77, 79);
+    z-index: -1;
+    border-radius: 30px;
+    animation: image2 var(--time) ease-in-out 0s infinite;
+    transition: background-image 25ms linear;
+}
+
+.image2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-image: url("");
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 15px rgb(71, 77, 79);
+    background-size: cover;
+    transform: translate(175px, -95px) scale(0.65);
+    z-index: -1;
+    border-radius: 30px;
+    background-color: #aadcd7;
+    animation: image3 var(--time) ease-in-out 0s infinite;
+    transition: background-image 25ms linear;
+}
+
+.image3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-image: url("");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate(-85px, 75px) scale(0.85);
+    z-index: -1;
+    border-radius: 30px;
+    box-shadow: 2px 2px 15px rgb(71, 77, 79);
+    background-color: #f8b4cb;
+    animation: image4 var(--time) ease-in-out 0s infinite;
+    transition: background-image 25ms linear;
+}
+
+.image4 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-image: url("");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate(125px, 65px) scale(0.75);
+    z-index: -1;
+    border-radius: 30px;
+    box-shadow: 2px 2px 15px rgb(71, 77, 79);
+    background-color: #2d9cdb;
+    animation: image5 var(--time) ease-in-out 0s infinite;
+    transition: background-image 25ms linear;
 }
 
 
