@@ -3,14 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
+
 body {
   height: 100%;
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 }
 .developer-info {
   height: 100%;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -86,7 +87,6 @@ body {
   border-radius: 30px;
   transform: skewY(15deg);
   overflow: hidden;
-  background-color: rgb(180, 43, 226);
 }
 
 #img-div {

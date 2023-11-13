@@ -104,6 +104,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  box-shadow: 2px 70px 100px 5px #000;
 }
 header {
   display: flex;
