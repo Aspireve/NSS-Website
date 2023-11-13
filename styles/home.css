@@ -70,12 +70,27 @@ body::-webkit-scrollbar {
   color: white;
   text-align: center;
 }
-
+.text-overlay {
+  background: #00000025;
+  filter: blur(200px);
+  width: 100%;
+  z-index: 100;
+  height: 100vh;
+  filter: brightness(90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* color: transparent; */
+}
 .text-overlay h3 {
   font-size: 5rem;
+  z-index: 100;
   white-space: nowrap;
   font-family: "Poppins", sans-serif;
-  color: rgba(255, 255, 255, 0.747);
+  color: white;
+  /* color: rgba(255, 255, 255, 0.747); */
+  z-index: 100;
 }
 
 .text-overlay h4 {
@@ -83,13 +98,14 @@ body::-webkit-scrollbar {
   font-weight: 400;
   white-space: nowrap;
   font-family: "Alex Brush", cursive;
-  color: rgba(255, 255, 255, 0.747);
+  color: white;
+  /* color: rgba(255, 255, 255, 0.747); */
 }
 
 .home-what-we-do {
   display: flex;
   flex-direction: row-reverse;
-  margin: 4rem 7rem;
+  margin: 10rem 7rem;
   gap: 5rem;
   justify-content: center;
   align-items: center;
@@ -101,7 +117,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
   justify-content: space-evenly;
   gap: 2rem;
-  padding-right: 2rem;
+  margin-right: 3rem;
 }
 
 .home-what-we-do-header {
@@ -128,7 +144,7 @@ body::-webkit-scrollbar {
   background: linear-gradient(90deg, #f675b3, #f56969);
 }
 .nss-team-logo-council .image-wrapper {
-  padding: 0 5rem;
+  margin: 2rem 2rem;
 }
 .image-wrapper > img {
   height: 20rem;
@@ -162,23 +178,26 @@ body::-webkit-scrollbar {
 .who-are-we {
   display: flex;
   flex-direction: row;
-  margin: 10rem 7rem;
-  gap: 6rem;
-  justify-content: center;
+  margin: 9rem 7rem;
+  gap: 9rem;
+  justify-content: space-around;
   align-items: center;
   margin-top: 1em;
+  margin-right: 4rem;
 }
 .volunteers-count {
   width: 80%;
-  height: 17rem;
+  height: 18rem;
   text-align: center;
   margin-top: -7rem;
   font-family: "Poppins", sans-serif;
+  /* background-color: #f56969; */
 }
 .volunteers-count > h1 {
   font-size: 50px;
   font-weight: 700;
   color: #2d9cdb;
+  margin-top: 1rem;
 }
 .count-of-details {
   display: flex;
@@ -190,6 +209,7 @@ body::-webkit-scrollbar {
   font-weight: 600;
 }
 .count-of-details img {
+  margin-top: 1rem;
   height: 5rem;
   width: 5rem;
 }
@@ -201,8 +221,8 @@ body::-webkit-scrollbar {
 .home-objectives {
   display: flex;
   flex-direction: column;
-  margin: 7rem;
-  gap: 5rem;
+  margin: -7rem 7rem;
+  gap: 4rem;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -283,7 +303,8 @@ body::-webkit-scrollbar {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding-bottom: 5rem;
+  margin-top: 8rem;
+  padding-bottom: 2rem;
 }
 
 .social-links div h3 {
