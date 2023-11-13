@@ -8,19 +8,54 @@
     <link rel="stylesheet" href="../styles/home.css" />
   </head>
   <body>
-    <div class="home-loader">
+    <!-- Loader -->
+    <!-- <div class="home-loader">
       <div class="loader-page">
-        <img class="loader-image" src="../assets/nss_logo.svg" alt="NSS-Logo" width="300px" height="auto" />
+        <img
+          class="loader-image"
+          src="../assets/nss_logo.svg"
+          alt="NSS-Logo"
+          width="300px"
+          height="auto"
+        />
         <div class="loader-text">
           <h1 class="loader-text-title">TCET NSS UNIT</h1>
           <h3 class="loader-text-subtitle">B-34 Mumbai University</h3>
         </div>
       </div>
-    </div>
+    </div> -->
 
-
-    
-    
+    <!-- Navbar -->
+    <header id="navbar-header">
+        <!-- NSS Logo (Completed) -->
+        <div class="logo-section">
+          <img class="logo-image" src="../assets/nss_logo.svg" alt="NSS Logo" />
+          <div class="logo-title">
+            <p class="TCET">TCET</p>
+            <p class="NSS-UNIT">NSS UNIT</p>
+          </div>
+        </div>
+  
+        <!-- Button for Responsiveness (Not Completed) -->
+        <!-- <button
+          class="home-mobile-nav"
+          aria-controls="nav-section"
+          aria-expanded="false"
+        >
+           <img src="assets/hamburger.png" /> 
+        </button> -->
+  
+        <!-- Nav Options (Completed) -->
+        <nav id="nav-section">
+          <ul class="nav-items" data-visible="false">
+            <li class="list-item">Home</li>
+            <li>About Us</li>
+            <li>Team</li>
+            <li>Testimonials</li>
+            <li>Projects</li>
+          </ul>
+        </nav>
+      </header>
   </body>
-  <script src="../script/home.js" defer ></script>
+  <script src="../script/home.js" defer></script>
 </html>
