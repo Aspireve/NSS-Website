@@ -1,8 +1,0 @@
-@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Poppins:wght@300;400;600;800&family=Alex+Brush&display=swap');
-
-:root {
-    --navbar-white: rgba(255, 255, 255, 0.749);
-    --navbar-plain-white: white;
-    --stylized-font: 'Alex Brush', cursive;
-    --bold-font: 'Poppins', sans-serif;
-}
