@@ -2,7 +2,7 @@ const loader_image = document.querySelector(".loader-image");
 const loader_text = document.querySelector(".loader-text-title");
 const loader_subtext = document.querySelector(".loader-text-subtitle");
 const home_loader = document.querySelector(".home-loader");
-const body = document.getElementsByTagName("body")
+const body = document.getElementsByTagName("body")[0]
 
 setTimeout(() => {
   loader_image.classList.add("load-image");
@@ -26,8 +26,10 @@ let lastScroll = 0
 var r = document.querySelector(':root');
 
 
-window.addEventListener("scroll", () => {
-    const currScroll = window.scrollY
+body.addEventListener("scroll", () => {
+    const currScroll = document.body.scrollTop
+    console.log(currScroll)
+    console.log("why not running")
 
     console.log(currScroll)
 
@@ -39,7 +41,7 @@ window.addEventListener("scroll", () => {
         r.style.setProperty('--navbar-links-hover-color', 'white');
     }
 
-    if(currScroll <= 500 && currScroll >= 10) {
+    if(currScroll <= 650 && currScroll >= 10) {
         header.classList.remove("scrollup")
         header.classList.remove("scrolldown")
         header.classList.add("navbaroverlay")
@@ -71,6 +73,7 @@ const observer = new IntersectionObserver((entries) => {
             // entry.target.classList.remove("hidden")
         }
         if(entry.target.classList.contains("show") && entry.target.classList.contains('num')){
+            entry.target.classList.remove("hidden")
             let Interval = 5000;
             let startValue = 0;
             let endValue = parseInt(entry.target.getAttribute("data-val"));
