@@ -66,15 +66,11 @@ window.addEventListener("scroll", () => {
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if(entry.isIntersecting && entry.target.classList.contains("hidden")) {
+        if(entry.isIntersecting) {
             entry.target.classList.add("show")
-            entry.target.classList.remove("hidden")
-            console.log("pls runn")
+            // entry.target.classList.remove("hidden")
         }
-        if(entry.target.classList.contains('num')){
-            console.log("runnn")
-        }
-        if(!entry.target.classList.contains("hidden") && entry.target.classList.contains('num')){
+        if(entry.target.classList.contains("show") && entry.target.classList.contains('num')){
             let Interval = 5000;
             let startValue = 0;
             let endValue = parseInt(entry.target.getAttribute("data-val"));
