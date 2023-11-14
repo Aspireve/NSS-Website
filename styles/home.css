@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Courgette&family=Poppins:wght@200;300;400;500;600;800&family=Rubik&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -231,7 +232,7 @@ header {
 .home-hero-section img {
     height: 100vh;
     width: 100vw;
-    background-image: url('../assets/nss_team_hero.png');
+    background-image: url('../assets/nss_team_hero.jpg');
     object-fit: cover;
     filter: brightness(30%);
     overflow: hidden;
@@ -571,7 +572,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     margin: 5rem auto;
-    height: 80vh;
+    height: 90vh;
     width: 70%;
     text-align: center;
 }
@@ -580,7 +581,7 @@ header {
     display: grid;
     grid-gap: 1rem;
     padding: 1rem;
-    max-width: 90%;
+    max-width: 100%;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -761,7 +762,7 @@ header {
 }
 
 /* Testimonials */
- .testimonials {
+.testimonials {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -771,19 +772,21 @@ header {
     width: 80%;
     text-align: center;
     overflow: hidden;
- }
-  
-  #scroller {
-    width: 500px; /* Change later */
-    height: 200px; /* Change later */
+}
+
+#scroller {
+    width: 500px;
+    /* Change later */
+    height: 200px;
+    /* Change later */
     position: relative;
     perspective: 500px;
     -webkit-perspective: 500px;
     -moz-perspective: 500px;
     -o-perspective: 500px;
-  }
-  
-  #scroller .item {
+}
+
+#scroller .item {
     width: 500px;
     display: block;
     position: absolute;
@@ -795,10 +798,10 @@ header {
     background-color: white;
     z-index: 0;
     filter: drop-shadow(10px 10px 10px rgba(10, 12, 26, 0.607));
-  }
-  
-  /* Since inset shadows don't play nice with images, we'll create a pseudo element and apply our image styling to that instead */
-  /* #scroller .item:before {
+}
+
+/* Since inset shadows don't play nice with images, we'll create a pseudo element and apply our image styling to that instead */
+/* #scroller .item:before {
     border-radius: 10px;
     width: 500px;
     display: block;
@@ -808,138 +811,140 @@ header {
     height: 100%;
     box-shadow: inset 0 0 0 1px rgba(255,255,255,0.3), 0 0 0 1px rgba(0,0,0,0.4);
   } */
-  
-  #scroller .item img {
+
+#scroller .item img {
     display: block;
     border-radius: 10px 0 0 10px;
     width: 500px;
     height: 250px;
-  }
-  
-  #scroller .left {
+}
+
+#scroller .left {
     transform: rotateY(30deg) translateX(-265px) skewY(-3deg) scale(0.5, 0.6);
     -webkit-transform: rotateY(30deg) translateX(-265px) skewY(-3deg) scale(0.5, 0.6);
     -moz-transform: rotateY(30deg) translateX(-265px) skewY(-3deg) scale(0.5, 0.6);
     -o-transform: rotateY(30deg) translateX(-265px) skewY(-3deg) scale(0.5, 0.6);
     filter: brightness(50%);
     transition: 300ms ease-in-out;
-  }
-  
-  #scroller .middle {
-    z-index:1;
+}
+
+#scroller .middle {
+    z-index: 1;
     transform: rotateY(0deg) translateX(0) scale(1);
     -webkit-transform: rotateY(0deg) translateX(0) scale(1);
     -moz-transform: rotateY(0deg) translateX(0) scale(1);
     -o-transform: rotateY(0deg) translateX(0) scale(1);
     transition: 300ms ease-in-out;
-  }
-  
-  #scroller .right {
+}
+
+#scroller .right {
     transform: rotateY(-30deg) translateX(265px) skewY(3deg) scale(0.5, 0.6);
     -webkit-transform: rotateY(-30deg) translateX(265px) skewY(3deg) scale(0.5, 0.6);
     -moz-transform: rotateY(-30deg) translateX(265px) skewY(3deg) scale(0.5, 0.6);
     -o-transform: rotateY(-30deg) translateX(265px) skewY(3deg) scale(0.5, 0.6);
     filter: brightness(50%);
     transition: 300ms ease-in-out;
-  }
-  
-  #scroller .left-hidden {
+}
+
+#scroller .left-hidden {
     opacity: 0;
     z-index: -1;
     transform: rotateY(25deg) translateX(-430px) skewY(-5deg) scale(0.3, 0.5);
     -webkit-transform: rotateY(25deg) translateX(-430px) skewY(-5deg) scale(0.3, 0.5);
     -moz-transform: rotateY(25deg) translateX(-430px) skewY(-5deg) scale(0.3, 0.5);
     -o-transform: rotateY(25deg) translateX(-430px) skewY(-5deg) scale(0.3, 0.5);
-  }
-  
-  #scroller .right-hidden {
+}
+
+#scroller .right-hidden {
     opacity: 0;
     z-index: -1;
     transform: rotateY(-25deg) translateX(430px) skewY(5deg) scale(0.3, 0.5);
     -webkit-transform: rotateY(-25deg) translateX(430px) skewY(5deg) scale(0.3, 0.5);
     -moz-transform: rotateY(-25deg) translateX(430px) skewY(5deg) scale(0.3, 0.5);
     -o-transform: rotateY(-25deg) translateX(430px) skewY(5deg) scale(0.3, 0.5);
-  }
-  
-  .nav {
+}
+
+.nav {
     position: absolute;
     top: 50%;
     width: 500px;
     height: 30px;
     z-index: 500;
     display: none;
-  }
+}
 
-  .prev, .next {
+.prev,
+.next {
     position: absolute;
     display: block;
     height: 30px;
     width: 30px;
-    background-color: rgba(0,0,0,0.85);
-    border-radius:15px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
     color: #E4E4E4;
     left: 15px;
     text-align: center;
     line-height: 26px;
     cursor: pointer;
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5), 0 0 0 1px rgba(0,0,0,0.7);
-  }
-  
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.7);
+}
 
-  .next {
+
+.next {
     left: inherit;
     right: 15px;
-  }
+}
 
-  .testimonial-card {
+.testimonial-card {
     width: 100%;
     height: 100%;
     max-width: 100%;
     max-height: 100%;
     display: flex;
-    
-  }
 
-  .testimonial-card img {
+}
+
+.testimonial-card img {
     width: 40%;
     height: 100%;
     object-fit: cover;
     background-repeat: no-repeat;
-  }
+}
 
-  .testimonial-text {
+.testimonial-text {
     text-align: left;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-  }
+}
 
-  .testimonial-quote {
+.testimonial-quote {
     font-size: 2rem;
     font-weight: 600;
-  }
+}
 
-  .testimonial-name {
+.testimonial-name {
     font-size: 1rem;
     font-weight: 300;
-  }
+}
 
-  .testimonial-line {
+.testimonial-line {
     height: 2px;
     width: 60px;
     background-color: black;
-  }
+}
 
-  .testimonial-content {
+.testimonial-content {
     font-size: .85rem;
-  }
-    /*
+}
+
+/*
   
   .prev:hover, .next:hover {
     box-shadow: inset 0 0 0 2px rgba(255,255,255,0.5), 0 0 0 1px rgba(0,0,0,0.7);                
   } */
-  
+
 
 /* Footer */
 
@@ -1035,4 +1040,75 @@ iframe {
 hr {
     height: 1px;
     background-color: #000;
+}
+
+.recent-posts {
+    width: 80%;
+    height: 120vh;
+    margin: 0 auto 5rem auto;
+}
+
+.post-container {
+    padding-top: 2rem;
+    display: grid;
+    width: 100%;
+    height: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.post-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Our Objectives */
+
+.domains {
+    margin: 5rem auto;
+}
+
+
+.socials {
+    height: 40vh;
+    margin: 3rem 0;
+}
+
+.social-links-icons {
+    display: flex;
+    width: 50%;
+    margin: 2rem auto;
+    justify-content: space-evenly;
+}
+
+.icon-handle {
+    text-align: center;
+}
+
+.icon-handle i {
+    font-size: 3rem;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.199);
+}
+
+.pink-color {
+    background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.blue-color {
+     background-color: #0077b5;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.dark-blue-color {
+    background:  #316FF6;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
