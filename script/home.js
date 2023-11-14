@@ -34,28 +34,28 @@ body.addEventListener("scroll", () => {
         console.log("run")
         header.classList.remove("scrollup")
         header.classList.remove("navbaroverlay")
-        r.style.setProperty('--navbar-links-hover-color', 'white');
+        r.style.setProperty('--hover-navbar', 'white');
     }
 
     if(currScroll <= 650 && currScroll >= 10) {
         header.classList.remove("scrollup")
         header.classList.remove("scrolldown")
         header.classList.add("navbaroverlay")
-        r.style.setProperty('--navbar-links-hover-color', 'white');
+        r.style.setProperty('--hover-navbar', 'white');
     }
 
     if(currScroll > lastScroll && currScroll > 500 && !header.classList.contains("scrolldown")){
         header.classList.remove("scrollup")
         header.classList.remove("navbaroverlay")
         header.classList.add("scrolldown")
-        r.style.setProperty('--navbar-links-hover-color', 'black');
+        r.style.setProperty('--hover-navbar', 'black');
     }
 
     if(currScroll < lastScroll && header.classList.contains("scrolldown")){
         header.classList.remove("scrolldown")
         header.classList.remove("navbaroverlay")
         header.classList.add("scrollup")
-        r.style.setProperty('--navbar-links-hover-color', 'black');
+        r.style.setProperty('--hover-navbar', 'black');
     }
 
     lastScroll = currScroll
