@@ -12,7 +12,7 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    overflow-y: hidden; /* Change this back later */
+    overflow-y: auto; /* Change this back later */
     position: relative;
     font-family: 'Poppins', sans-serif;
 }
@@ -402,7 +402,7 @@ header {
     width: 100%;
     top: 0;
     background-image: url("../assets/carousel-main-image.png");
-    box-shadow: 2px 2px 15px rgb(71, 77, 79);
+    box-shadow: 2px 2px 20px rgba(71, 77, 79, 0.616);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -422,7 +422,7 @@ header {
     background-size: cover;
     background-position: center;
     transform: translate(-115px, -95px);
-    box-shadow: 2px 2px 15px rgb(71, 77, 79);
+    box-shadow: 2px 2px 20px rgba(71, 77, 79, 0.616);
     z-index: -1;
     border-radius: 30px;
     animation: image2 var(--time) ease-in-out 0s infinite;
@@ -437,7 +437,7 @@ header {
     background-image: url("");
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: 2px 2px 15px rgb(71, 77, 79);
+    box-shadow: 2px 2px 20px rgba(71, 77, 79, 0.616);
     background-size: cover;
     transform: translate(175px, -95px) scale(0.65);
     z-index: -1;
@@ -459,7 +459,7 @@ header {
     transform: translate(-85px, 75px) scale(0.85);
     z-index: -1;
     border-radius: 30px;
-    box-shadow: 2px 2px 15px rgb(71, 77, 79);
+    box-shadow: 2px 2px 20px rgba(71, 77, 79, 0.616);
     background-color: #f8b4cb;
     animation: image4 var(--time) ease-in-out 0s infinite;
     transition: background-image 25ms linear;
@@ -477,10 +477,77 @@ header {
     transform: translate(125px, 65px) scale(0.75);
     z-index: -1;
     border-radius: 30px;
-    box-shadow: 2px 2px 15px rgb(71, 77, 79);
+    box-shadow: 2px 2px 20px rgba(71, 77, 79, 0.616);
     background-color: #2d9cdb;
     animation: image5 var(--time) ease-in-out 0s infinite;
     transition: background-image 25ms linear;
 }
 
+/* Our Achievements */
+
+.our-achievements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: var(--section-padding);
+    height: 70vh;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.count-of-details {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 1rem; 
+}
+
+
+.count-card {
+    height: 100%;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section-subheader {
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: var(--bold-font);
+    line-height: 115%;
+}
+
+.align-together {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: var(--bold-font);
+    line-height: 115%;
+    text-align: center;
+}
+
+.count-card img {
+    border-radius: 50%;
+    padding: .2rem;
+    border: .2rem solid black;
+}
+
+
+.count-of-details img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.section-subheader {
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: var(--bold-font);
+    line-height: 115%;
+}
 

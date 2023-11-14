@@ -66,8 +66,28 @@ window.addEventListener("scroll", () => {
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if(entry.isIntersecting) {
+        if(entry.isIntersecting && entry.target.classList.contains("hidden")) {
             entry.target.classList.add("show")
+            entry.target.classList.remove("hidden")
+            console.log("pls runn")
+        }
+        if(entry.target.classList.contains('num')){
+            console.log("runnn")
+        }
+        if(!entry.target.classList.contains("hidden") && entry.target.classList.contains('num')){
+            let Interval = 5000;
+            let startValue = 0;
+            let endValue = parseInt(entry.target.getAttribute("data-val"));
+            console.log("run")
+            let duration = Math.floor(Interval / endValue);
+            let counter = setInterval(function () {
+              startValue += 1;
+              entry.target.textContent = startValue;
+              if (startValue == endValue) {
+                clearInterval(counter);
+              }
+            }, duration);
+            entry.target.classList.remove('num')
         }
     })
     
@@ -76,18 +96,18 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((e) => observer.observe(e))
 
-let dispvalue = document.querySelectorAll(".num");
-let Interval = 5000;
+// let dispvalue = document.querySelectorAll(".num");
+// let Interval = 5000;
 
-dispvalue.forEach((dispvalue) => {
-  let startValue = 0;
-  let endValue = parseInt(dispvalue.getAttribute("data-val"));
-  let duration = Math.floor(Interval / endValue);
-  let counter = setInterval(function () {
-    startValue += 1;
-    dispvalue.textContent = startValue;
-    if (startValue == endValue) {
-      clearInterval(counter);
-    }
-  }, duration);
-});
+// dispvalue.forEach((dispvalue) => {
+//   let startValue = 0;
+//   let endValue = parseInt(dispvalue.getAttribute("data-val"));
+//   let duration = Math.floor(Interval / endValue);
+//   let counter = setInterval(function () {
+//     startValue += 1;
+//     dispvalue.textContent = startValue;
+//     if (startValue == endValue) {
+//       clearInterval(counter);
+//     }
+//   }, duration);
+// });
