@@ -3,7 +3,9 @@ const loader_text = document.querySelector(".loader-text-title");
 const loader_subtext = document.querySelector(".loader-text-subtitle");
 const home_loader = document.querySelector(".home-loader");
 const body = document.getElementsByTagName("body")[0]
-
+const open_menu = document.getElementsByClassName("home-mobile-nav")[0]
+const menu_nav_links = document.getElementById("nav-section")
+var menu_opened = false
 setTimeout(() => {
   loader_image.classList.add("load-image");
   setTimeout(() => {
@@ -17,6 +19,21 @@ setTimeout(() => {
     }, 1000);
   }, 1000);
 }, 500);
+
+open_menu.addEventListener("click" , () => {
+  console.log("Clicked")
+  if(!menu_opened) {
+    menu_nav_links.classList.add("open_menu_nav")
+    open_menu.innerHTML = `<i class="fa-solid fa-xmark"></i>`
+    menu_opened = true
+    console.log("open")
+  } else if (menu_opened) {
+    menu_nav_links.classList.remove("open_menu_nav")
+    open_menu.innerHTML = `<i class="fa-solid fa-bars"></i>`
+    menu_opened = false
+    console.log("close")
+  }
+})
 
 // Navbar Animations
 const header = document.getElementById("navbar-header")

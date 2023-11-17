@@ -45,13 +45,13 @@
       </div>
 
       <!-- Button for Responsiveness (Not Completed) -->
-      <!-- <button
-          class="home-mobile-nav"
-          aria-controls="nav-section"
-          aria-expanded="false"
-        >
-           <img src="assets/hamburger.png" /> 
-        </button> -->
+      <button
+        class="home-mobile-nav"
+        aria-controls="nav-section"
+        aria-expanded="false"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
       <!-- Nav Options (Completed) -->
       <nav id="nav-section">
@@ -79,8 +79,10 @@
     <section class="who-are-we" id="home-who-are-we">
       <!-- Section Text (Complete) -->
       <div class="who-are-we-text">
-        <h2 class="section-header" style="text-align: left">Who are we</h2>
-        <p class="section-passage">
+        <h2 class="section-header hidden" >
+          Who are we
+        </h2>
+        <p class="section-passage hidden">
           TCET NSS UNIT is an extra-curricular activity aided by the University
           of Mumbai and the Department of Youth Affairs and Sports, Government
           of India. Holding the motto NOT ME BUT YOU, it aims enhancing the
@@ -104,8 +106,8 @@
 
     <section class="what-we-do">
       <!-- Section Text (Complete) -->
-      <div class="what-we-do-text">
-        <h2 class="section-header" style="text-align: left">What we do</h2>
+      <div class="what-we-do-text hidden">
+        <h2 class="section-header">What we do</h2>
         <p class="section-passage">
           The TCET NSS Unit is dedicated to spreading joy through community
           service, emphasizing education and advancement as our primary goals.
@@ -130,8 +132,8 @@
 
     <!-- Our Achievements -->
     <section class="our-achievements">
-      <h3 class="section-header">Our Achievements</h3>
-      <p class="section-passage">
+      <h3 class="section-header hidden">Achievements</h3>
+      <p class="section-passage hidden">
         Our exceptional achievements are a direct result of the remarkable
         teamwork and relentless commitment of our NSS volunteers. Working
         harmoniously together, they have consistently contributed to positive
@@ -141,50 +143,59 @@
         community.
       </p>
       <div class="count-of-details">
-        <div class="count-card">
-          <h1 class="section-subheader">No. of Years</h1>
-          <img src="../assets/nss_logo.svg" alt="volunteers" />
+        <div class="count-card hidden">
+          <h1 class="section-subheader">Established Since</h1>
+          <div class="responsive-flex-row">
+            <img src="../assets/nss_logo.svg" alt="volunteers" />
 
-          <div style="text-align: center">
-            <div class="align-together">
-              <p class="num hidden" data-val="18">0</p>
+            <div class="achievements-info" style="text-align: center">
+              <div class="align-together">
+                <p class="num hidden" data-val="18">0</p>
+              </div>
+              <p class="count-card-details">years</p>
             </div>
-            <p class="count-card-details">years</p>
           </div>
         </div>
-        <div class="count-card">
-          <h1 class="section-subheader">Lives Affected</h1>
-          <div class="image-border">
+        <div class="count-card hidden">
+          <h1 class="section-subheader">People Affected</h1>
+          <div class="responsive-flex-row">
             <img src="../assets/lives-affected.png" alt="volunteers" />
-          </div>
-          <div style="text-align: center">
-            <div class="align-together">
-              <p class="num hidden" data-val="120">0</p>
-              <p>,000</p>
+            <div class="achievements-info" style="text-align: center">
+              <div class="align-together">
+                <p class="num hidden" data-val="120">0</p>
+                <p>,000</p>
+              </div>
+              <p class="count-card-details">Lives</p>
             </div>
-            <p class="count-card-details">Lives</p>
           </div>
         </div>
-        <div class="count-card">
+        <div class="count-card hidden">
           <h1 class="section-subheader">Total Volunteers</h1>
-          <img src="../assets/no-of-volunteers.png" alt="volunteers" />
-          <div style="text-align: center">
-            <div class="align-together">
-              <p>1,</p>
-              <p class="num hidden" data-val="350">105</p>
+          <div class="responsive-flex-row">
+            <img src="../assets/no-of-volunteers.png" alt="volunteers" />
+            <div class="achievements-info" style="text-align: center">
+              <div class="align-together">
+                <p>1,</p>
+                <p class="num hidden" data-val="350">105</p>
+              </div>
+              <p class="count-card-details">Volunteers</p>
             </div>
-            <p class="count-card-details">Volunteers</p>
           </div>
         </div>
-        <div class="count-card">
-          <h1 class="section-subheader">No. of Hours</h1>
-          <img src="../assets/tree-plantation.png" alt="trees" />
-          <div style="text-align: center">
-            <div class="align-together">
-              <p class="num hidden" data-val="90">0</p>
-              <p>,000</p>
+        <div class="count-card hidden">
+          <h1 class="section-subheader">Volunteer Hours</h1>
+          <div
+            class="responsive-flex-row"
+            style="border-bottom: none; padding-bottom: 0"
+          >
+            <img src="../assets/tree-plantation.png" alt="trees" />
+            <div class="achievements-info" style="text-align: center">
+              <div class="align-together">
+                <p class="num hidden" data-val="90">0</p>
+                <p>,000</p>
+              </div>
+              <p class="count-card-details">hours</p>
             </div>
-            <p class="count-card-details">hours</p>
           </div>
         </div>
       </div>
@@ -202,22 +213,23 @@
             <hr />
             <p class="domain-text">
               The first objective is to help volunteers gain a profound
-              understanding of the community in which they work. This involves
-              immersing themselves in the community's culture, values, and
-              unique characteristics.
+              understanding of the community in which they work.The first objective is to help volunteers gain a profound
+              understanding of the community in which they work.The first objective is to help volunteers gain a profound
+              understanding of the community in which they work.The first objective is to help volunteers gain a profound
+              understanding of the community in which they work.
             </p>
           </div>
         </div>
         <div class="environment-odd hidden">
-          
           <div class="details">
             <h3 class="domain-name">HEALTH</h3>
             <hr />
             <p class="domain-text">
               The first objective is to help volunteers gain a profound
-              understanding of the community in which they work. This involves
-              immersing themselves in the community's culture, values, and
-              unique characteristics.
+              understanding of the community in which they work.The first objective is to help volunteers gain a profound
+              understanding of the community in which they work.The first objective is to help volunteers gain a profound
+              understanding of the community in which they work.The first objective is to help volunteers gain a profound
+              understanding of the community in which they work.
             </p>
           </div>
           <img src="../assets/health.png" />
@@ -229,22 +241,23 @@
             <hr />
             <p class="domain-text">
               The first objective is to help volunteers gain a profound
-              understanding of the community in which they work. This involves
-              immersing themselves in the community's culture, values, and
-              unique characteristics.
+              understanding of the community in which they work.The first objective is to help volunteers gain a profound
+              understanding of the community in which they work.The first objective is to help volunteers gain a profound
+              understanding of the community in which they work.The first objective is to help volunteers gain a profound
+              understanding of the community in which they work.
             </p>
           </div>
         </div>
         <div class="environment-odd hidden">
-          
           <div class="details">
             <h3 class="domain-name">SOCIETY</h3>
             <hr />
             <p class="domain-text">
               The first objective is to help volunteers gain a profound
-              understanding of the community in which they work. This involves
-              immersing themselves in the community's culture, values, and
-              unique characteristics.
+              understanding of the community in which they work.The first objective is to help volunteers gain a profound
+              understanding of the community in which they work.The first objective is to help volunteers gain a profound
+              understanding of the community in which they work.The first objective is to help volunteers gain a profound
+              understanding of the community in which they work.
             </p>
           </div>
           <img src="../assets/society.png" />
@@ -254,9 +267,9 @@
 
     <!-- Our Objectives -->
 
-    <section class="our-objectives hidden">
-      <h3 class="section-header">Our Objectives</h3>
-      <p class="section-passage">
+    <section class="our-objectives">
+      <h3 class="section-header hidden">Our Objective</h3>
+      <p class="section-passage hidden">
         Our primary objective is to address pressing issues and create lasting
         change in the communities we serve. In every project, we strategically
         design initiatives that not only target specific goals but also aim to
@@ -266,7 +279,7 @@
       </p>
       <main class="page-content">
         <!-- Card 1 -->
-        <div class="card">
+        <div class="card hidden">
           <div class="content">
             <!-- Card Title and Text (Complete) -->
             <h2 class="title">Community Understanding</h2>
@@ -281,7 +294,7 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="card">
+        <div class="card hidden">
           <div class="content">
             <h2 class="title">Assess and Engage</h2>
             <p class="copy">
@@ -293,7 +306,7 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="card">
+        <div class="card hidden">
           <div class="content">
             <h2 class="title">Competence Development</h2>
             <p class="copy">
@@ -306,7 +319,7 @@
         </div>
 
         <!-- Card 4 -->
-        <div class="card">
+        <div class="card hidden">
           <div class="content">
             <h2 class="title">Leadership and Democracy</h2>
             <p class="copy">
